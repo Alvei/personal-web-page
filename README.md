@@ -1,4 +1,4 @@
-# Alvei's musing
+# Hugo's musing
 
 Personal blog built with Astro, Markdown, and Cloudflare Pages.
 

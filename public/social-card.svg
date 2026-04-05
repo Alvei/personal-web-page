@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">Alvei's musing</title>
-  <desc id="desc">A cool modern social card for Alvei's musing.</desc>
+  <title id="title">Hugo's musing</title>
+  <desc id="desc">A cool modern social card for Hugo's musing.</desc>
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#f8fbff" />
@@ -15,6 +15,6 @@
   <circle cx="1008" cy="140" r="88" fill="#0f766e" fill-opacity="0.12" />
   <circle cx="920" cy="500" r="116" fill="#ffffff" fill-opacity="0.45" />
   <text x="110" y="234" fill="#0f766e" font-size="26" font-family="Helvetica, Arial, sans-serif" letter-spacing="5">NOTES AND ESSAYS</text>
-  <text x="110" y="328" fill="#0f172a" font-size="84" font-weight="700" font-family="Helvetica, Arial, sans-serif">Alvei's musing</text>
+  <text x="110" y="328" fill="#0f172a" font-size="84" font-weight="700" font-family="Helvetica, Arial, sans-serif">Hugo's musing</text>
   <text x="110" y="396" fill="#475569" font-size="34" font-family="Helvetica, Arial, sans-serif">Thoughts on work, learning, and ideas worth revisiting.</text>
 </svg>
