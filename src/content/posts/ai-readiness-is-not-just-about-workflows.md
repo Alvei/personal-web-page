@@ -15,6 +15,8 @@ That feels exactly right to me. I originally shared a shorter version of this id
 
 The companies getting the most from AI right now are not the ones treating it like a plug-in upgrade. They are the ones willing to rethink how work actually happens. They understand that agents can be remarkably capable, but they also need context to do their best work. They need clear goals, accessible data, documented processes, and well-defined standards. They also need humans who know when to step in, review, and redirect.
 
+Part of why this matters to me is that it sits between two other ideas I have been circling on this blog: the importance of making AI systems more understandable, as I wrote in [Why Karpathy's microgpt stuck with me](/posts/why-karpathys-microgpt-stuck-with-me/), and the need to rethink where human value sits as AI changes software itself.
+
 But the more I think about it, the more I feel that workflow redesign is only part of the story.
 
 The other part is reskilling.
@@ -29,6 +31,6 @@ I also think there is a next challenge already taking shape. It is not just that
 
 So the future skill is not just using AI. It is orchestrating it.
 
-That is why I think AI readiness is deeper than AI adoption. The companies that move fastest will not simply be the ones with access to better models. They will be the ones that help their people build the judgment, adaptability, and fluency needed to work alongside AI well.
+That is why I think AI readiness is deeper than AI adoption. The companies that move fastest will not simply be the ones with access to better models. They will be the ones that help their people build the judgment, adaptability, and fluency needed to work alongside AI well. In that sense, AI readiness is really one expression of a larger point I make in [The future of software is not less human](/posts/the-future-of-software-is-not-less-human/): the advantage will come from stronger human leverage, not just faster automation.
 
 To me, this is not just a technology shift. It is a learning shift.

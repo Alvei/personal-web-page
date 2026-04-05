@@ -23,6 +23,8 @@ Those are real questions, but they are incomplete ones.
 
 In a world increasingly shaped by AI, direction matters more, not less. Framing the right problem, setting priorities, providing context, evaluating tradeoffs, and deciding when to trust an answer are all becoming more important. AI can accelerate execution. It does not remove the need for judgment. If anything, it raises the value of judgment.
 
+That is closely related to something I wrote in [AI readiness is not just about workflows](/posts/ai-readiness-is-not-just-about-workflows/). The companies getting the most from AI are usually the ones redesigning work around context, review, and human judgment, not just dropping a model into an old process.
+
 That is one reason I think the companies that will benefit most from AI are not just the ones deploying the best tools. They are the ones helping people learn how to work alongside those tools well.
 
 To me, this is where the conversation gets more interesting. The gap is not just technical. It is adaptive. The people who seem to be thriving with AI are often the ones who are learning how to learn with it. They know how to shape the task, how to give enough context, how to review the output critically, and how to recognize when the system is useful versus when it is simply sounding convincing.
@@ -32,6 +34,8 @@ That is a different kind of professional capability than many organizations are 
 It also changes what it means to be the human in the loop. The role is less about being involved in every step and more about intervening at the moments that matter. That sounds subtle, but I do not think it is. It is a real shift in how work gets designed and how people create value.
 
 I also think the companies that pull ahead will not just retool existing workflows. They will learn how to reimagine them. And that takes more than technology. It takes people who understand the business context, the limits of the models, and the reality that experimentation has to be continuous.
+
+And the better we understand what these systems are actually doing, the easier it becomes to redesign work around them intelligently. That is one reason Karpathy's tiny teaching artifact still matters, as I wrote in [Why Karpathy's microgpt stuck with me](/posts/why-karpathys-microgpt-stuck-with-me/).
 
 That is why I keep coming back to learning. Not learning in the narrow sense of training people on a tool, but learning in the broader sense of helping organizations become more adaptive. If AI changes the shape of work, then the advantage will go to the companies that can help their people change with it.
 

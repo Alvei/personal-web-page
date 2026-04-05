@@ -21,6 +21,8 @@ That feels right to me.
 
 What microgpt offers is not usefulness in the usual product sense. It offers clarity. It draws a line between the essential idea and all the machinery we pile on top of it. Karpathy's phrase that "everything else is just efficiency" is a bit provocative, but I think that is part of why it works. It gives people permission to see modern LLMs as understandable systems rather than untouchable black boxes.
 
+That same theme keeps showing up in how I think about [AI readiness](/posts/ai-readiness-is-not-just-about-workflows/). The bottleneck is often not raw model capability, but whether people and organizations know how to provide structure, context, and judgment in the right places.
+
 I think that is why the post resonated so widely. It does not shrink the importance of the engineering that makes real-world AI possible. But it does remind us that beneath the scale, there is still a core structure that can be learned, examined, and explained.
 
-And in a field that so often feels inflated, that kind of clarity is refreshing.
+And in a field that so often feels inflated, that kind of clarity is refreshing. It also connects to a broader question I keep coming back to in [The future of software is not less human](/posts/the-future-of-software-is-not-less-human/): if AI changes execution, where does human leverage move next?
