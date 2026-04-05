@@ -11,7 +11,7 @@ tags:
 
 Aaron Levie made a point in a recent LinkedIn post that has stayed with me. He argued that there will be a split between the companies that redesign their workflows to take advantage of AI agents as they exist today, and the ones that wait for the technology to improve enough that they do not have to change much at all.
 
-That feels exactly right to me.
+That feels exactly right to me. I originally shared a shorter version of this idea on [LinkedIn](https://www.linkedin.com/posts/hugo-sarrazin_aaron-levie-this-resonates-with-what-were-activity-7376317969255256065-w8EL/).
 
 The companies getting the most from AI right now are not the ones treating it like a plug-in upgrade. They are the ones willing to rethink how work actually happens. They understand that agents can be remarkably capable, but they also need context to do their best work. They need clear goals, accessible data, documented processes, and well-defined standards. They also need humans who know when to step in, review, and redirect.
 
