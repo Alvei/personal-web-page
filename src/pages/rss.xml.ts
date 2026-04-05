@@ -6,7 +6,7 @@ export async function GET(context: APIContext) {
   const posts = await getCollection("posts", ({ data }) => !data.draft);
 
   return rss({
-    title: "A Quiet Corner",
+    title: "Alvei's musing",
     description: "A personal blog for essays, notes, and questions worth returning to.",
     site: context.site ?? "https://example.com",
     items: posts

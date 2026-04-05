@@ -1,4 +1,4 @@
-# A Quiet Corner
+# Alvei's musing
 
 Personal blog built with Astro, Markdown, and Cloudflare Pages.
 
