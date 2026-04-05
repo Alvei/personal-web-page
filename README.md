@@ -50,3 +50,5 @@ Set these environment variables:
 - RSS feed is available at `/rss.xml`
 
 Last deploy trigger: 2026-04-04
+
+Analytics redeploy trigger: 2026-04-05
