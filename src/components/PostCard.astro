@@ -1,0 +1,26 @@
+---
+import type { Post } from "../lib/posts";
+
+type Props = {
+  post: Post;
+};
+
+const { post } = Astro.props;
+
+const published = post.publishedAt.toLocaleDateString("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric"
+});
+---
+
+<article class="post-card">
+  <p class="eyebrow">{published}</p>
+  <h2>
+    <a href={`/posts/${post.slug}/`}>{post.title}</a>
+  </h2>
+  <p class="summary">{post.summary}</p>
+  <ul class="tag-list" aria-label="Tags">
+    {post.tags.map((tag) => <li>{tag}</li>)}
+  </ul>
+</article>

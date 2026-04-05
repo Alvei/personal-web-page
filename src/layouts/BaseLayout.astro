@@ -1,0 +1,53 @@
+---
+import CloudflareAnalytics from "../components/CloudflareAnalytics.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import "../styles/global.css";
+
+type Props = {
+  title: string;
+  description: string;
+  canonicalPath?: string;
+  image?: string;
+};
+
+const {
+  title,
+  description,
+  canonicalPath = Astro.url.pathname,
+  image = "/social-card.svg"
+} = Astro.props;
+
+const siteUrl = new URL(Astro.site ?? "https://example.com");
+const canonicalUrl = new URL(canonicalPath, siteUrl).toString();
+const imageUrl = new URL(image, siteUrl).toString();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={imageUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+    <slot name="head" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <SiteHeader currentPath={Astro.url.pathname} />
+      <main>
+        <slot />
+      </main>
+    </div>
+    <CloudflareAnalytics />
+  </body>
+</html>

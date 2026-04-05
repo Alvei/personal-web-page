@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PostCard from "../components/PostCard.astro";
+import { getLatestPosts } from "../lib/posts";
+
+const posts = await getLatestPosts(3);
+---
+
+<BaseLayout
+  title="A Quiet Corner"
+  description="A personal blog for essays, notes, and questions worth returning to."
+>
+  <section class="hero">
+    <p class="eyebrow">Personal blog</p>
+    <h1>Thoughts that deserve a little more room.</h1>
+    <p class="lede">
+      A small home for writing in public: essays, notes, experiments, and ideas
+      I want to revisit over time.
+    </p>
+    <div class="hero-actions">
+      <a class="button-primary" href="/posts">Read the archive</a>
+    </div>
+  </section>
+
+  <section class="section-heading">
+    <div>
+      <p class="eyebrow">Latest writing</p>
+      <h2>Recent posts</h2>
+    </div>
+    <a class="section-link" href="/posts">View all posts</a>
+  </section>
+
+  <section class="post-grid" aria-label="Recent posts">
+    {posts.map((post) => <PostCard post={post} />)}
+  </section>
+</BaseLayout>

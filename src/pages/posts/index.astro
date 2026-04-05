@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostCard from "../../components/PostCard.astro";
+import { getAllPosts } from "../../lib/posts";
+
+const posts = await getAllPosts();
+---
+
+<BaseLayout
+  title="Posts | A Quiet Corner"
+  description="An archive of essays, notes, and ideas."
+  canonicalPath="/posts/"
+>
+  <section class="archive-hero">
+    <p class="eyebrow">Archive</p>
+    <h1>All posts</h1>
+    <p class="lede">
+      Everything published here, ordered so the newest ideas stay close at hand.
+    </p>
+  </section>
+
+  <section class="post-grid" aria-label="All posts">
+    {posts.map((post) => <PostCard post={post} />)}
+  </section>
+</BaseLayout>
