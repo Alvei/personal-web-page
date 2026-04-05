@@ -48,3 +48,5 @@ Set these environment variables:
 
 - Sitemap is generated automatically at `/sitemap-index.xml`
 - RSS feed is available at `/rss.xml`
+
+Last deploy trigger: 2026-04-04
