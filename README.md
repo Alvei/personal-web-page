@@ -52,3 +52,5 @@ Set these environment variables:
 Last deploy trigger: 2026-04-04
 
 Analytics redeploy trigger: 2026-04-05
+
+Cloudflare Workers deploy uses `wrangler.jsonc` to publish the built `dist` directory as static assets.
