@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { topics } from "../../lib/topics";
+---
+
+<BaseLayout
+  title="Topics | Hugo's musing"
+  description="Browse essays by topic across AI, work, organizations, and learning."
+  canonicalPath="/topics/"
+>
+  <section class="archive-hero">
+    <p class="eyebrow">Topics</p>
+    <h1>Browse the themes taking shape across the blog.</h1>
+    <p class="lede">
+      These topic pages group essays that are starting to form a larger arc:
+      AI and work, AI-native organizations, and learning in a period of rapid
+      change.
+    </p>
+  </section>
+
+  <section class="topic-grid" aria-label="Topic pages">
+    {topics.map((topic) => (
+      <article class="topic-card">
+        <p class="eyebrow">Topic</p>
+        <h2>
+          <a href={`/topics/${topic.slug}/`}>{topic.title}</a>
+        </h2>
+        <p class="summary">{topic.description}</p>
+        <a class="topic-link" href={`/topics/${topic.slug}/`}>
+          Explore the topic
+        </a>
+      </article>
+    ))}
+  </section>
+</BaseLayout>

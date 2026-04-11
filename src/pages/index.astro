@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PostCard from "../components/PostCard.astro";
 import { getLatestPosts } from "../lib/posts";
+import { topics } from "../lib/topics";
 
 const posts = await getLatestPosts(3);
 ---
@@ -32,5 +33,25 @@ const posts = await getLatestPosts(3);
 
   <section class="post-grid" aria-label="Recent posts">
     {posts.map((post) => <PostCard post={post} />)}
+  </section>
+
+  <section class="section-heading">
+    <div>
+      <p class="eyebrow">Explore further</p>
+      <h2>Topic pages</h2>
+    </div>
+    <a class="section-link" href="/topics">Browse all topics</a>
+  </section>
+
+  <section class="topic-grid" aria-label="Topic pages">
+    {topics.map((topic) => (
+      <article class="topic-card">
+        <p class="eyebrow">Topic</p>
+        <h2>
+          <a href={`/topics/${topic.slug}/`}>{topic.title}</a>
+        </h2>
+        <p class="summary">{topic.description}</p>
+      </article>
+    ))}
   </section>
 </BaseLayout>
