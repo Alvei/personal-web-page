@@ -60,3 +60,21 @@ export async function getPostBySlug(slug: string) {
   const entries = await getPostEntries();
   return entries.find((post) => post.slug === slug);
 }
+
+export async function getRelatedPosts(slug: string, tags: string[], limit = 3) {
+  const posts = await getAllPosts();
+
+  return posts
+    .filter((post) => post.slug !== slug)
+    .map((post) => ({
+      post,
+      sharedTags: post.tags.filter((tag) => tags.includes(tag)).length
+    }))
+    .filter(({ sharedTags }) => sharedTags > 0)
+    .sort((a, b) => {
+      if (b.sharedTags !== a.sharedTags) return b.sharedTags - a.sharedTags;
+      return b.post.publishedAt.getTime() - a.post.publishedAt.getTime();
+    })
+    .slice(0, limit)
+    .map(({ post }) => post);
+}
