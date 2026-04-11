@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import PostCard from "../components/PostCard.astro";
+import { getRelatedPosts } from "../lib/posts";
 
 type Props = {
   title: string;
@@ -11,6 +13,28 @@ type Props = {
 };
 
 const { title, description, publishedAt, updatedAt, tags, slug } = Astro.props;
+const relatedPosts = await getRelatedPosts(slug, tags, 3);
+const siteUrl = new URL(Astro.site ?? "https://example.com");
+const canonicalUrl = new URL(`/posts/${slug}/`, siteUrl).toString();
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: title,
+  description,
+  datePublished: publishedAt.toISOString(),
+  ...(updatedAt ? { dateModified: updatedAt.toISOString() } : {}),
+  mainEntityOfPage: canonicalUrl,
+  url: canonicalUrl,
+  author: {
+    "@type": "Person",
+    name: "Hugo Sarrazin"
+  },
+  publisher: {
+    "@type": "Person",
+    name: "Hugo Sarrazin"
+  },
+  keywords: tags.join(", ")
+};
 
 const published = publishedAt.toLocaleDateString("en-US", {
   month: "long",
@@ -30,6 +54,9 @@ const updated = updatedAt?.toLocaleDateString("en-US", {
   description={description}
   canonicalPath={`/posts/${slug}/`}
 >
+  <Fragment slot="head">
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
   <article class="post-shell">
     <header class="post-header">
       <p class="eyebrow">{published}</p>
@@ -46,4 +73,15 @@ const updated = updatedAt?.toLocaleDateString("en-US", {
       <slot />
     </div>
   </article>
+  {relatedPosts.length > 0 && (
+    <section class="related-posts">
+      <div class="related-posts-heading">
+        <p class="eyebrow">Continue Reading</p>
+        <h2>Related posts</h2>
+      </div>
+      <div class="post-grid" aria-label="Related posts">
+        {relatedPosts.map((post) => <PostCard post={post} />)}
+      </div>
+    </section>
+  )}
 </BaseLayout>
