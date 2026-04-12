@@ -72,6 +72,16 @@ const updated = updatedAt?.toLocaleDateString("en-US", {
     <div class="prose">
       <slot />
     </div>
+    <aside class="author-box" aria-label="About the author">
+      <p class="eyebrow">About the author</p>
+      <h2>Hugo Sarrazin</h2>
+      <p>
+        I write about AI, learning, and how work changes when intelligence
+        becomes more abundant. This blog is a place to think in public about
+        capability building, better systems, and ideas worth revisiting.
+      </p>
+      <a class="topic-link" href="/about/">Read more about Hugo</a>
+    </aside>
   </article>
   {relatedPosts.length > 0 && (
     <section class="related-posts">
