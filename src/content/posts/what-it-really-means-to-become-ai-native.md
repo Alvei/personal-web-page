@@ -19,7 +19,7 @@ There is already evidence that AI can produce meaningful gains. One recent analy
 
 That is where I think the distinction matters.
 
-An AI-native company does not just ask, “Where can we automate?” It asks, “How should this work change now that intelligence is broadly available?” That is a different question. It shifts the focus from tooling to workflow redesign. It forces teams to make context more explicit, define standards more clearly, and rethink where human judgment adds the most value.
+An AI-native company does not just ask, “Where can we automate?” It asks, “How should this work change now that intelligence is broadly available?” That is a different question. It shifts the focus from tooling to workflow redesign. It forces teams to make context more explicit, define standards more clearly, and rethink where human judgment adds the most value. It also builds on something I explored more directly in [AI readiness is not just about workflows](/posts/ai-readiness-is-not-just-about-workflows/): workflow redesign only becomes durable when people learn how to work with AI well.
 
 It also changes how we think about people.
 
@@ -36,3 +36,5 @@ That, to me, is what it really means to become AI-native.
 It is not a software purchase. It is not a pilot. It is not a prompt library.
 
 It is a different way of organizing work, learning faster, and creating value in a world where intelligence is no longer scarce.
+
+This essay is part of the [AI and Work](/topics/ai-and-work/) thread.

@@ -29,8 +29,10 @@ It also changes what it means to be the human in the loop. In many cases, the jo
 
 I also think there is a next challenge already taking shape. It is not just that teams need to retool existing workflows to include agents. They also need to learn how to reimagine the workflows themselves. And they need to do that in a world where there are many agents to choose from, each with different strengths, limitations, and failure modes.
 
-So the future skill is not just using AI. It is orchestrating it.
+So the future skill is not just using AI. It is orchestrating it. That is also part of what I mean in [What it really means to become AI-native](/posts/what-it-really-means-to-become-ai-native/): the real shift is not just adopting tools, but redesigning how work, learning, and judgment fit together.
 
 That is why I think AI readiness is deeper than AI adoption. The companies that move fastest will not simply be the ones with access to better models. They will be the ones that help their people build the judgment, adaptability, and fluency needed to work alongside AI well. In that sense, AI readiness is really one expression of a larger point I make in [The future of software is not less human](/posts/the-future-of-software-is-not-less-human/): the advantage will come from stronger human leverage, not just faster automation.
 
 To me, this is not just a technology shift. It is a learning shift.
+
+This essay is part of the [Learning and Capability Building](/topics/learning-and-capability-building/) thread.
