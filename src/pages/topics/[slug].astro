@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostCard from "../../components/PostCard.astro";
+import { getAllPosts } from "../../lib/posts";
+import { getPostsForTopic, topics } from "../../lib/topics";
+
+export async function getStaticPaths() {
+  return topics.map((topic) => ({
+    params: { slug: topic.slug },
+    props: { topic }
+  }));
+}
+
+const { topic } = Astro.props;
+const posts = getPostsForTopic(await getAllPosts(), topic);
+---
+
+<BaseLayout
+  title={`${topic.title} | Hugo's musing`}
+  description={topic.description}
+  canonicalPath={`/topics/${topic.slug}/`}
+>
+  <section class="archive-hero">
+    <p class="eyebrow">Topic</p>
+    <h1>{topic.title}</h1>
+    <p class="lede">{topic.intro}</p>
+  </section>
+
+  <section class="section-heading">
+    <div>
+      <p class="eyebrow">Related writing</p>
+      <h2>Posts in this thread</h2>
+    </div>
+    <a class="section-link" href="/posts">View all posts</a>
+  </section>
+
+  <section class="post-grid" aria-label={`${topic.title} posts`}>
+    {posts.map((post) => <PostCard post={post} />)}
+  </section>
+</BaseLayout>

@@ -211,9 +211,27 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 }
 
+.topic-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
 .post-card {
   padding: 1.35rem;
   border-radius: 1.5rem;
+}
+
+.topic-card {
+  padding: 1.35rem;
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  background: linear-gradient(
+    155deg,
+    rgba(255, 255, 255, 0.94),
+    rgba(239, 246, 255, 0.8)
+  );
+  box-shadow: var(--shadow);
 }
 
 .post-card h2 {
@@ -223,8 +241,28 @@ img {
   line-height: 1.1;
 }
 
+.topic-card h2 {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 1.7rem;
+  line-height: 1.1;
+}
+
 .post-card h2 a {
   text-decoration: none;
+}
+
+.topic-card h2 a,
+.topic-link {
+  text-decoration: none;
+}
+
+.topic-link {
+  display: inline-flex;
+  margin-top: 0.5rem;
+  color: var(--accent-dark);
+  font-family: var(--font-sans);
+  font-weight: 700;
 }
 
 .summary {
