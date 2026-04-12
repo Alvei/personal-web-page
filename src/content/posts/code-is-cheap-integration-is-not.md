@@ -54,3 +54,5 @@ And that may turn out to be one of the most important engineering truths of this
 That is the downstream side of the story.
 
 **The upstream side is different, but just as important.** As code gets cheaper to produce, the value of clear thinking, context, specification, and problem framing rises with it. If this essay is about why integration becomes the bottleneck after generation, the next one should be about why good inputs are becoming the bottleneck before it.
+
+This essay is part of the [AI-Native Organizations](/topics/ai-native-organizations/) thread.

@@ -33,7 +33,7 @@ That is a different kind of professional capability than many organizations are 
 
 It also changes what it means to be the human in the loop. The role is less about being involved in every step and more about intervening at the moments that matter. That sounds subtle, but I do not think it is. It is a real shift in how work gets designed and how people create value.
 
-I also think the companies that pull ahead will not just retool existing workflows. They will learn how to reimagine them. And that takes more than technology. It takes people who understand the business context, the limits of the models, and the reality that experimentation has to be continuous.
+I also think the companies that pull ahead will not just retool existing workflows. They will learn how to reimagine them. And that takes more than technology. It takes people who understand the business context, the limits of the models, and the reality that experimentation has to be continuous. That is part of why the next bottleneck often shows up after generation as well, as I wrote in [Code is cheap. Integration is not.](/posts/code-is-cheap-integration-is-not/).
 
 And the better we understand what these systems are actually doing, the easier it becomes to redesign work around them intelligently. That is one reason Karpathy's tiny teaching artifact still matters, as I wrote in [Why Karpathy's microgpt stuck with me](/posts/why-karpathys-microgpt-stuck-with-me/).
 
@@ -48,3 +48,5 @@ I think it is more human in a different way. The winners will not just be the co
 That feels like the harder story.
 
 It also feels like the more durable one.
+
+This essay is part of the [AI and Work](/topics/ai-and-work/) thread.
