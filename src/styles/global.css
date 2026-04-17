@@ -286,7 +286,7 @@ img {
 .featured-post {
   padding: 1.9rem 1.9rem 2rem;
   border-radius: 1.8rem;
-  min-height: 100%;
+  align-self: start;
   background:
     linear-gradient(155deg, rgba(14, 22, 35, 0.98), rgba(10, 16, 26, 0.92)),
     radial-gradient(circle at top right, rgba(22, 103, 255, 0.16), transparent 24%),
