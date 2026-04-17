@@ -42,16 +42,28 @@ const featuredPublished = featuredPost?.publishedAt.toLocaleDateString("en-US", 
     {
       featuredPost && (
         <article class="featured-post">
-          <p class="eyebrow">Lead blog</p>
-          <p class="featured-post-date">{featuredPublished}</p>
-          <h3>
-            <a href={`/posts/${featuredPost.slug}/`}>{featuredPost.title}</a>
-          </h3>
-          <p class="summary">{featuredPost.summary}</p>
-          <ul class="tag-list" aria-label="Tags">
-            {featuredPost.tags.map((tag) => <li>{tag}</li>)}
-          </ul>
-          <a class="topic-link" href={`/posts/${featuredPost.slug}/`}>Read the post</a>
+          <div class="featured-post-body">
+            <p class="eyebrow">Lead blog</p>
+            <p class="featured-post-date">{featuredPublished}</p>
+            <h3>
+              <a href={`/posts/${featuredPost.slug}/`}>{featuredPost.title}</a>
+            </h3>
+            <div class="featured-post-excerpt">
+              {(featuredPost.featuredExcerpt.length > 0
+                ? featuredPost.featuredExcerpt
+                : [featuredPost.summary]
+              ).map((paragraph) => <p>{paragraph}</p>)}
+            </div>
+          </div>
+
+          <div class="featured-post-footer">
+            <a class="continue-reading-badge" href={`/posts/${featuredPost.slug}/`}>
+              Continue reading
+            </a>
+            <ul class="tag-list" aria-label="Tags">
+              {featuredPost.tags.map((tag) => <li>{tag}</li>)}
+            </ul>
+          </div>
         </article>
       )
     }

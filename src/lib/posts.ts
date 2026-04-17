@@ -5,6 +5,7 @@ export type Post = {
   slug: string;
   title: string;
   summary: string;
+  featuredExcerpt: string[];
   publishedAt: Date;
   updatedAt?: Date;
   tags: string[];
@@ -16,6 +17,24 @@ function comparePosts(a: Post, b: Post) {
   return b.publishedAt.getTime() - a.publishedAt.getTime();
 }
 
+function normalizeExcerptText(value: string) {
+  return value
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/[*_`>#]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function extractFeaturedExcerpt(body: string, summary: string) {
+  const paragraphs = body
+    .split(/\n\s*\n/)
+    .map((paragraph) => normalizeExcerptText(paragraph))
+    .filter((paragraph) => paragraph.length > 70)
+    .filter((paragraph) => paragraph !== normalizeExcerptText(summary));
+
+  return paragraphs.slice(0, 3);
+}
+
 async function getPostEntries() {
   const entries = await getCollection("posts", ({ data }) => !data.draft);
 
@@ -25,6 +44,7 @@ async function getPostEntries() {
       slug: entry.slug,
       title: entry.data.title,
       summary: entry.data.summary,
+      featuredExcerpt: extractFeaturedExcerpt(entry.body, entry.data.summary),
       publishedAt: entry.data.publishedAt,
       updatedAt: entry.data.updatedAt,
       tags: entry.data.tags,
