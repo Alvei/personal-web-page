@@ -14,9 +14,9 @@ export const topics: Topic[] = [
     slug: "ai-and-work",
     title: "AI and Work",
     description:
-      "Essays on how AI is changing work design, judgment, and human leverage.",
+      "Blog posts on how AI is changing work design, judgment, and human leverage.",
     intro:
-      "A cluster of essays about how AI is changing the shape of work itself: what becomes cheaper, what becomes more valuable, and where judgment still matters most.",
+      "A cluster of blog posts about how AI is changing the shape of work itself: what becomes cheaper, what becomes more valuable, and where judgment still matters most.",
     tags: ["ai", "future-of-work"],
     postSlugs: [
       "the-future-of-software-is-not-less-human",
@@ -44,7 +44,7 @@ export const topics: Topic[] = [
     description:
       "Reflections on reskilling, adaptability, and learning how to work well with AI.",
     intro:
-      "Essays focused on the human side of the transition: how people learn to work with AI, what new capabilities matter, and why adaptation compounds.",
+      "Blog posts focused on the human side of the transition: how people learn to work with AI, what new capabilities matter, and why adaptation compounds.",
     tags: ["learning", "future-of-work", "ai"],
     postSlugs: [
       "why-karpathys-microgpt-stuck-with-me",
