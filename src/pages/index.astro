@@ -57,12 +57,12 @@ const featuredPublished = featuredPost?.publishedAt.toLocaleDateString("en-US", 
           </div>
 
           <div class="featured-post-footer">
-            <ul class="tag-list" aria-label="Tags">
-              {featuredPost.tags.map((tag) => <li>{tag}</li>)}
-            </ul>
             <a class="continue-reading-badge" href={`/posts/${featuredPost.slug}/`}>
               Continue reading
             </a>
+            <ul class="tag-list" aria-label="Tags">
+              {featuredPost.tags.map((tag) => <li>{tag}</li>)}
+            </ul>
           </div>
         </article>
       )
