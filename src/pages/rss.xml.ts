@@ -6,8 +6,8 @@ export async function GET(context: APIContext) {
   const posts = await getCollection("posts", ({ data }) => !data.draft);
 
   return rss({
-    title: "Hugo's musing",
-    description: "A personal blog for essays, notes, and questions worth returning to.",
+    title: "Hugo Sarrazin",
+    description: "Notes on AI, learning, and the future of work.",
     site: context.site ?? "https://example.com",
     items: posts
       .sort(
