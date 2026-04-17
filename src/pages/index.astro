@@ -19,7 +19,7 @@ const featuredPublished = featuredPost?.publishedAt.toLocaleDateString("en-US", 
   description="Notes on AI, learning, and the future of work."
 >
   <section class="hero">
-    <p class="eyebrow">Notes and essays</p>
+    <p class="eyebrow">Notes and blog posts</p>
     <h1>Thoughts on work, learning, and ideas worth revisiting.</h1>
     <p class="lede">
       A place to think in public about AI, learning, and the systems that shape
@@ -42,7 +42,7 @@ const featuredPublished = featuredPost?.publishedAt.toLocaleDateString("en-US", 
     {
       featuredPost && (
         <article class="featured-post">
-          <p class="eyebrow">Lead essay</p>
+          <p class="eyebrow">Lead blog</p>
           <p class="featured-post-date">{featuredPublished}</p>
           <h3>
             <a href={`/posts/${featuredPost.slug}/`}>{featuredPost.title}</a>
@@ -51,9 +51,7 @@ const featuredPublished = featuredPost?.publishedAt.toLocaleDateString("en-US", 
           <ul class="tag-list" aria-label="Tags">
             {featuredPost.tags.map((tag) => <li>{tag}</li>)}
           </ul>
-          <a class="topic-link" href={`/posts/${featuredPost.slug}/`}>
-            Read the essay
-          </a>
+          <a class="topic-link" href={`/posts/${featuredPost.slug}/`}>Read the post</a>
         </article>
       )
     }
