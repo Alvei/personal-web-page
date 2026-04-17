@@ -323,11 +323,18 @@ img {
   text-decoration: none;
 }
 
-.featured-post .summary {
+.featured-post-excerpt {
+  display: grid;
+  gap: 0.95rem;
   max-width: 34rem;
   margin-top: 1.2rem;
+}
+
+.featured-post-excerpt p {
+  margin: 0;
   font-size: 1.2rem;
   line-height: 1.72;
+  color: #c7d2e2;
 }
 
 .featured-post-footer {

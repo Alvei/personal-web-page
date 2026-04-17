@@ -48,7 +48,12 @@ const featuredPublished = featuredPost?.publishedAt.toLocaleDateString("en-US", 
             <h3>
               <a href={`/posts/${featuredPost.slug}/`}>{featuredPost.title}</a>
             </h3>
-            <p class="summary">{featuredPost.summary}</p>
+            <div class="featured-post-excerpt">
+              {(featuredPost.featuredExcerpt.length > 0
+                ? featuredPost.featuredExcerpt
+                : [featuredPost.summary]
+              ).map((paragraph) => <p>{paragraph}</p>)}
+            </div>
           </div>
 
           <div class="featured-post-footer">
