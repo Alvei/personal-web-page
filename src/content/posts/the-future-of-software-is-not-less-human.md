@@ -1,7 +1,7 @@
 ---
 title: "The future of software is not less human"
 slug: "the-future-of-software-is-not-less-human"
-publishedAt: 2026-02-21
+publishedAt: 2026-03-21
 summary: "A reflection on why the biggest value from AI may come less from replacing labor and more from increasing human leverage."
 tags:
   - ai
