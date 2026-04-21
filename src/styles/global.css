@@ -616,6 +616,52 @@ img {
   border-left: 3px solid rgba(90, 169, 255, 0.45);
 }
 
+.prose table {
+  width: 100%;
+  margin: 1.65rem 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: hidden;
+  border: 1px solid rgba(138, 185, 255, 0.24);
+  border-radius: 1rem;
+  background:
+    linear-gradient(180deg, rgba(18, 27, 39, 0.9), rgba(14, 20, 30, 0.86)),
+    radial-gradient(circle at top right, rgba(90, 169, 255, 0.06), transparent 24%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.prose thead tr {
+  background: rgba(90, 169, 255, 0.08);
+}
+
+.prose th,
+.prose td {
+  padding: 0.95rem 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose th {
+  color: #f4f8ff;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.prose td {
+  color: #d8e2ef;
+}
+
+.prose tbody tr + tr td {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.prose th + th,
+.prose td + td {
+  border-left: 1px solid rgba(90, 169, 255, 0.14);
+}
+
 @media (max-width: 720px) {
   .page-shell {
     width: min(calc(100% - 1rem), var(--content-width));
@@ -641,5 +687,11 @@ img {
 
   .home-writing-grid {
     grid-template-columns: 1fr;
+  }
+
+  .prose table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
